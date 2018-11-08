@@ -1,0 +1,406 @@
+* {
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  65% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container {
+  width: 80%;
+}
+
+main {
+  position: relative;
+  top: 70px;
+}
+
+section {
+  padding: 70px 30px;
+}
+
+.theme-button {
+  background: #0089c4;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 0px;
+  color: white;
+  margin: 10px;
+}
+
+.theme-button:hover {
+  animation: swing 1s ease-out;
+}
+
+.section-name, .section-description {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-name {
+  color: black;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  color: #aaaaaa;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.dots {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #0089c4;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.dots .full {
+  background: #0089c4;
+}
+
+header {
+  background: black;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 70px;
+  background: black;
+  font-size: 11px;
+  font-family: Montserrat;
+}
+
+header nav ul {
+  position: relative;
+  margin-bottom: 0;
+  height: 70px;
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+header nav ul .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  width: auto;
+}
+
+header nav ul li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  height: 70px;
+  display: inline-block;
+  transition: .2s ease-out;
+}
+
+header nav ul li a {
+  padding: 0 5px;
+  line-height: 65px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .2s ease-out;
+}
+
+header nav ul li:hover {
+  border-bottom: 4px solid #0089c4;
+}
+
+header nav ul li:hover a {
+  color: #0089c4;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url("../images/hero.jpeg");
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.hero .slogan {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 100%;
+}
+
+.hero .slogan1 {
+  color: black;
+}
+
+.hero .slogan1 span {
+  color: #0089c4;
+  font-weight: 700;
+}
+
+.hero .slogan2 {
+  color: #0089c4;
+  font-size: 30px;
+}
+
+.hero h2 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.about-us {
+  text-align: center;
+}
+
+.about-us .content {
+  padding: 20px 0;
+}
+
+.about-us .content p {
+  text-align: justify;
+}
+
+.about-us img {
+  width: 80%;
+  box-shadow: 3px 3px 20px grey;
+}
+
+.services {
+  background: black;
+}
+
+.services .section-name {
+  color: white;
+  padding-bottom: 30px;
+}
+
+.services .section-description {
+  padding-top: 20px;
+}
+
+.services .row {
+  border-right: 1px solid #333333;
+}
+
+.services .service {
+  padding: 5px;
+  text-align: center;
+  border-left: 1px solid #333333;
+  height: 100%;
+  text-decoration: none;
+}
+
+.services .service span {
+  font-size: 55px;
+  color: #0089c4;
+}
+
+.services .service h3 {
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: .2s ease-out;
+}
+
+.services .service p {
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.software {
+  text-align: center;
+  background-size: cover;
+}
+
+.software .card {
+  padding: 10px;
+}
+
+.software .card div {
+  background: white;
+  padding: 30px 10px 20px 10px;
+  border-radius: 3px;
+}
+
+.software .card div img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.software .card div button {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+.software .card div .subsection-description {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.certificates {
+  text-align: center;
+}
+
+.certificates .card {
+  padding: 10px;
+  background: white;
+  padding: 30px 10px 20px 10px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.certificates .card img {
+  height: 150px;
+  width: auto;
+}
+
+.certificates .card .description {
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .3s;
+}
+
+.certificates .card .description img {
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: calc(50% - 45px);
+}
+
+.certificates .card .description:hover {
+  opacity: 1;
+}
+
+.some-facts {
+  background: black;
+  text-align: center;
+}
+
+.some-facts .section-name {
+  color: white;
+}
+
+.some-facts h3 {
+  color: #0089c4;
+  padding: 5px 5px 8px 5px;
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
+}
+
+.some-facts h3::after {
+  content: 'x';
+  color: transparent;
+  border-bottom: 3px solid #aaaaaa;
+  position: absolute;
+  bottom: 0;
+  right: calc(50% - 13px);
+}
+
+.some-facts h4 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.some-facts p {
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.contact-us {
+  z-index: 1;
+  background: url("../images/software.png");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0 160px 0;
+}
+
+.contact-us .section-description {
+  margin-bottom: 50px;
+}
+
+.contact-us .theme-button {
+  margin: 20px;
+}
+
+.contact-us .theme-button:hover {
+  color: #0089c4;
+}
+
+.contact-us .col {
+  padding-top: 20px;
+}
+
+footer {
+  position: relative;
+  top: 0;
+  background: black;
+  padding: 20px;
+  color: white;
+  z-index: 3;
+}
+/*# sourceMappingURL=style.css.map */
