@@ -51,7 +51,7 @@ header nav ul li:hover { border-bottom: 4px solid #0089c4; }
 
 header nav ul li:hover a { color: #0089c4; text-decoration: none; }
 
-.hero { background-image: url("../images/tlo1.jpg"); background-size: cover; width: 100%; min-height: 600px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; text-align: center; padding: 30px; }
+.hero { background-image: url("../images/tlo1.JPG"); background-size: cover; width: 100%; min-height: 600px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; text-align: center; padding: 30px; }
 
 .hero h1 { text-transform: uppercase; font-weight: 600; font-size: 40px; }
 
