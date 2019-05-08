@@ -4,11 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Awax page</title>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" >
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
-        <link rel="stylesheet" href="odometer-theme-car.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
@@ -19,77 +19,103 @@
             <nav class="menuBig">
                 <ul class="container">
                     <li><img src="images/logo.png" class="logo" alt="logo"></li>
-                    <li><a href="x">Start</a></li>
-                    <li><a href="x">Kim jesteśmy</a></li>
-                    <li><a href="x">Oprogramowanie</a></li>
-                    <li><a href="x">Standardy</a></li>
-                    <li><a href="x">Certyfikaty</a></li>
-                    <li><a href="x">Kontakt</a></li>
+                    <a href="#start"><li>Start</li></a>
+                    <a href="#about"><li>O nas</li></a>
+                    <a href="#offer"><li>Oferta</li></a>
+                    <a href="#standards"><li>Standardy</li></a>
+                    <a href="#certificates"><li>Certyfikaty</li></a>
+                    <a href="#contact"><li>Kontakt</li></a>
                 </ul>
             </nav> 
         </header>
 <!-- HERO -->
         <main>
-		<section class="hero">
+		<section class="hero" id="start">
 			<div class="slogan">
 				<h1 class="slogan1"><span>P</span>rogramowanie, <span>s</span>zkolenia, <span>p</span>omiary</h2>
-                <h1 class="slogan2">metrologia to nasz konik!</h1>
-                <h2>Zadzwoń: +48 509 457 568</h2>
-                <button class="theme-button">Napisz do nas</button>
+                <h1 class="slogan2">metrologia to nasza pasja!</h1>
+                <a href="#contact"><button class="theme-button">Skontaktuj się z nami</button></a>
 			</div>			
         </section>
         
         
 <!-- ABOUT US -->
-		<section class="about-us">
+		<section class="about-us" id="about">
 			<div class="container">
-				<h1 class="section-name">O nas</h1>
-				<h2 class="section-description">Kim jesteśmy?</h2>
+                <h1 class="section-name">O nas</h1>
+                <h2 class="section-description">Kim jesteśmy?</h2>
 				<div class="row">
 					 <div class="content col-lg-7 col-md-7 col-sm-12">
-                        <p>Jesteśmy zespołem inżynierów z wieloletnim doświadczeniem w jakości. 
-                            Cechuje nas przede wszystkim <b>praktyczne podejście</b> do zagadnień metrologii współrzędnościowej. 
-                            Do tej pory mieliśmy okazję rozwiązywać problemy jakościowe w branżach automotive, lotniczej, budowy generatorów prądotwórczych przy zastosowaniu sprzętu firm: <b>Zeiss, Mitutoyo, Wenzel, Mahr, GOM.</b> 
-                            Pracowaliśmy z dokumentacją techniczną, wg której wymagana była <b>bardzo wysoka dokładność wytwarzanego wyrobu</b>, a co za tym idzie odpowiednie podejście do wykonania pomiaru i opracowania wyników. 
-                            Mamy wiedzę z zakresu stosowanych norm GD&T i mieliśmy okazję pracować na komponentach <b>z różnych materiałów i w różnej fazie obróbki</b>.
-                            Dysponujemy również wiedzą teoretyczną i praktyczną z ogólnych zasad metrologii w tym właściwego <b>doboru sprzętu pomiarowego i zasad zarządzania środkami kontrolno-pomiarowymi</b>, przede wszystkim z zakresu technik współrzędnościowych. 
+                        <p>Jesteśmy zespołem metrologów z wieloletnim doświadczeniem w jakości. Cechuje nas przede wszystkim <b>praktyczne podejście</b> do zagadnień metrologii współrzędnościowej.</p>
+                        <p>Do tej pory mieliśmy okazję rozwiązywać problemy jakościowe w branżach automotive, lotniczej, budowy generatorów prądotwórczych przy zastosowaniu sprzętu firm: 
+                            <b><ul>
+                                <li>Zeiss,</li> 
+                                <li>Mitutoyo,</li> 
+                                <li>Wenzel, Mahr, GOM.</li>
+                            </ul></b>
                         </p>
-                        <h3>Nasza oferta:</h3>
-                        <h4>1. Programowanie CMM</h4>
+                        <p>Pracowaliśmy z dokumentacją techniczną, wg której wymagana była <b>bardzo wysoka dokładność wytwarzanego wyrobu</b>, a co za tym idzie odpowiednie podejście do wykonania pomiaru i opracowania wyników.</p>
+                        <p>Mamy wiedzę z zakresu stosowanych norm GD&T i mieliśmy okazję pracować na komponentach <b>z różnych materiałów i w różnej fazie obróbki</b>.</p>
+                        <p>Dysponujemy również wiedzą teoretyczną i praktyczną z ogólnych zasad metrologii w tym właściwego <b>doboru sprzętu pomiarowego i zasad zarządzania środkami kontrolno-pomiarowymi</b>, przede wszystkim z zakresu technik współrzędnościowych.</p> 
+                    </div>
+					<div class="col-lg-5 col-md-5 col-sm-12 picture">
+                        <img src="images/cmm.png" alt="">
+					</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- OFFER -->
+        
+        <section class="offer" id="offer">
+            <div class="container">
+                <h1 class="section-name">Nasza oferta</h1>
+                <div class="row">
+                    <div class="content col-lg-3 col-md-6 col-sm-12">
+                        <h4>Programowanie CMM</h4>
+                        <p class="icon"><span class="fas fa-code"></span></p>
+                        <p>Piszemy programy na maszynach firm:</p>
                         <ul>
                             <li>Zeiss</li>
                             <li>Mitutoyo</li>
                             <li>Wenzel</li>
                         </ul>
                         <p>na miejscu u klienta lub offline</p>
-                        
-                        <h4>2. Szkolenia CMM</h4>
+                    </div>
+                    <div class="content col-lg-3 col-md-6 col-sm-12">
+                    
+                        <h4>Szkolenia CMM</h4>
+                        <p class="icon"><span class="fas fa-graduation-cap"></span></p>
+                        <p>Przeszkolimy Cię z:</p>
                         <ul>
-                            <li>obsługa i działanie maszyn CMM</li>
-                            <li>programowanie CMM (oprogramowanie Calypso, MCosmos: Quartis)</li>
+                            <li>obsługi i działania maszyn CMM</li>
+                            <li>programowania CMM (oprogramowanie Calypso, MCosmos, Quartis)</li>
                         </ul>
-                        <p>szkolimy zupełnie od podstaw lub na poziomie zaawansowanym</p>
-                        
-                        <h4>3. Szkolenia metrologiczne</h4>
+                        <p>Szkolimy zupełnie od podstaw lub na poziomie zaawansowanym</p>
+                    </div>
+                    <div class="content col-lg-3 col-md-6 col-sm-12">
+                        <h4>Szkolenia metrologiczne</h4>
+                        <p class="icon"><span class="fas fa-pencil-ruler"></span></p>
+                        <p>Nauczymy Cię o:</p>
                         <ul>
-                            <li>rysunek techniczny</li>
-                            <li>sprzęt kontrolno pomiarowy</li>
+                            <li>rysunku technicznym</li>
+                            <li>sprzęcie kontrolno pomiarowym</li>
                             <li>GD&T (wymiarowanie i tolerowanie)</li>
                         </ul>
-                        
-                        <h4>5. Pomiary</h4>
+                    </div>
+                    <div class="content col-lg-3 col-md-6 col-sm-12">
+                        <h4>Pomiary</h4>
+                        <p class="icon"><span class="fas fa-ruler"></span></p>
+                        <p>Oferujemy usługi:</p>
                         <ul>
-                            <li>pomiar części lub partii detali</li>
-                            <li>pomiary na maszynach CMM</li>
-                            <li>pomiary metodami manualnymi</li>
+                            <li>pomiaru części lub partii detali</li>
+                            <li>pomiaru na maszynach CMM</li>
+                            <li>pomiaru metodami manualnymi</li>
                         </ul>
-                        <div class="button">
-                            <button class="theme-button">Zapytaj o pełną ofertę</button>
-                        </div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-12">
-                        <img src="images/cmm.png" alt="">
-					</div>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#contact"><button class="theme-button">Zapytaj o pełną ofertę</button></a>
                 </div>
             </div>
         </section>
@@ -106,12 +132,12 @@
                                 <p class="subsection-description">od wielu lat pracujenmy dla firm, a naszym celem jest dostarczenie klientowi wyrobów i usług na najwyższym możliwym poziomie</p>
                         </div>
                         <div class="service col-md-4 col-lg-4 col-sm-12">	
-                                <span class="fa fa-coffee"></span>
+                                <span class="fas fa-mountain"></span>
                                 <h3 class="subsection-name">pasja</h3>
                                 <p class="subsection-description">lubimy to co robimy i realizujemy się w tym, wnikliwie analizując każdy przypadek</p>
                         </div>
                         <div class="service col-md-4 col-lg-4 col-sm-12">	
-                                <span class="fa fa-comments"></span>
+                                <span class="fas fa-people-carry"></span>
                                 <h3 class="subsection-name">zaangażowanie</h3>
                                 <p class="subsection-description">do każdego zadania podchodzimy indywidualnie i dajemy z siebie 100%</p>
                         </div>
@@ -120,70 +146,26 @@
                 </div>
             </section>
 
-<!-- SOFTWARE -->
-
-<section class="software">
-        <h1 class="section-name">PRACUJEMY Z OPROGRAMOWANIEM</h1>
-        <h2 class="section-description">wiodących producentów</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 card">
-                    <div>
-                        <img src="images/software/mCosmos.png" alt="">
-                        <h4 class="subsection-description">oprogramowanie firmy Mitutoyo działające od 1980 roku, obecnie wspierane w 37 krajach i 12 językach</h4>
-                        <a href="https://ecatalog.mitutoyo.com/MCOSMOS-Coordinate-Measuring-Machine-Software-C1019.aspx" target="_blank">
-                            <button class="theme-button">Dowiedz się więcej</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 card">
-                    <div>
-                        <img src="images/software/wmQuartis.png" alt="">
-                        <h4 class="subsection-description">oprogramowanie firmy Wenzel stworzone w Szwajcarii, charakteryzujące się przyjaznym interfejsem i dobrym stosunkiem ceny do możliwości</h4>
-                        <a href="https://www.wenzel-group.com/en/service/software/" target="_blank">
-                            <button class="theme-button">Dowiedz się więcej</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 card">
-                    <div>
-                        <img src="images/software/calypso.jpg" alt="">
-                        <h4 class="subsection-description">oprogramowanie firmy Zeiss charakteryzujące się wieloma specjalistycznymi rozwiązaniami i dużą elastycznością</h4>
-                        <a href="https://www.zeiss.pl/metrologia/produkty/oprogramowanie/calypso.html" target="_blank">
-                            <button class="theme-button">Dowiedz się więcej</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 <!-- SERVICES -->
 
-        <section class="services">
+        <section class="sectors" id="standards">
             <div class="container">
                 <h1 class="section-name">Spełniamy najwyższe standardy branż</h1>
                 <div class="row">
                     <div class="service col-md-4 col-lg-4 col-sm-12">	
-                        <a href="#">
-                            <span class="fa fa-plane"></span>
-                            <h3 class="subsection-name">Aerospace</h3>
-                            <p class="subsection-description">branża charakteryzująca się podwyższonymi standardami bezpieczeństwa, mnogością norm i surowością wymagań</p>
-                        </a>
+                        <span class="fa fa-plane"></span>
+                        <h3 class="subsection-name">Aerospace</h3>   
+                        <p class="subsection-description">branża charakteryzująca się podwyższonymi standardami bezpieczeństwa, mnogością norm (ASME) i surowością wymagań</p>  
                     </div>
                     <div class="service col-md-4 col-lg-4 col-sm-12">	
-                        <a href="#">
-                            <span class="fa fa-car"></span>
-                            <h3 class="subsection-name">Automotive</h3>
-                            <p class="subsection-description">dynamicznie rozwijająca i zmieniająca się branża, która łączy wysokie wymagania norm i konieczność dostosowania się do dynamicznego rynku</p>
-                        </a>
+                        <span class="fa fa-car"></span>
+                        <h3 class="subsection-name">Automotive</h3>
+                        <p class="subsection-description">dynamicznie rozwijająca i zmieniająca się branża, która łączy wysokie wymagania norm (IATF) i konieczność dostosowania się do dynamicznego rynku</p>
                     </div>
                     <div class="service col-md-4 col-lg-4 col-sm-12">	
-                        <a href="#">
-                            <span class="fa fa-home"></span>
-                            <h3 class="subsection-name">RTV/AGD</h3>
-                            <p class="subsection-description">branża obecna w każdym domu, dynamicznie zmieniająca się wraz z rosnącymi wymaganiami konsumentów</p>
-                        </a>
+                        <span class="fa fa-home"></span>
+                        <h3 class="subsection-name">RTV/AGD</h3>
+                        <p class="subsection-description">branża obecna w każdym domu, dynamicznie zmieniająca się wraz z rosnącymi wymaganiami konsumentów</p>
                     </div>
                 </div>
                 <h2 class="section-description">...i inne</h2>
@@ -192,36 +174,44 @@
 
 <!-- CERTIFICATES -->
 
-<section class="certificates">
+<section class="certificates" id="certificates">
         <h1 class="section-name">Posiadamy renomowane certyfikaty</h1>
         <h2 class="section-description"></h2>
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-12 card">
+                <div class="col-lg-2 col-md-4 col-sm-6 card">
                     <img src="images/certificates/mitutoyo.jpg" alt="">
                     <div class="description">
                         <img src="images/certificates/mitutoyoLogo.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 card">
+                <div class="col-lg-2 col-md-4 col-sm-6 card">
                     <img src="images/certificates/wenzel.jpg" alt="">
                     <div class="description">
                         <img src="images/certificates/wenzelLogo.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 card">
-                    <img src="images/certificates/tqmSoft.jpg" alt="">
+                <!-- zeiss -->
+                <div class="col-lg-2 col-md-4 col-sm-6 card">
+                    <img src="images/certificates/zeiss.jpg" alt="">
                     <div class="description">
-                        <img src="images/certificates/tqmSoftLogo.png" alt="">
+                        <img src="images/certificates/zeissLogo.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 card">
+                <!-- urzad miar -->
+                <div class="col-lg-2 col-md-4 col-sm-6 card">
+                    <img src="images/certificates/gum.jpg" alt="">
+                    <div class="description">
+                        <img src="images/certificates/gumLogo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 card">
                     <img src="images/certificates/proNost.jpg" alt="">
                     <div class="description">
                         <img src="images/certificates/proNostLogo.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 card">
+                <div class="col-lg-2 col-md-4 col-sm-6 card">
                     <img src="images/certificates/sgp.jpg" alt="">
                     <div class="description">
                         <img src="images/certificates/sgpLogo.png" alt="">
@@ -240,11 +230,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12 card">
                         <p>ponad</p>
-                        <h3>
-                            <span class='numscroller' data-min='0' datamax='20' data-delay='5' data-increment='1'>
-                                20
-                            </span>
-                        </h3>
+                        <h3>20</h3>
                         <h4>lat doświadczenia</h4>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 card">
@@ -266,11 +252,44 @@
 
 <!-- CONTACT US -->
 
-        <section class="contact-us">
-                <h1 class="section-name">Napisz do nas</h1>
+        <section class="contact-us" id="contact">
+                <h1 class="section-name">Skontaktuj się z nami</h1>
                 <h3 class="section-description">Chętnie odpowiemy na Twoje pytania</h3>
                 <div class="container">
-                    <form>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 write">
+                            <h2>Napisz do nas!</h2>
+                            <h4><a href="mailto:pspcmm@wp.pl">pspcmm@wp.pl</a></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h1>Grzegorz Frączek</h1>
+                            <p>Mitutoyo, Wenzel, szkolenia CMM i teoretyczne</p>
+                            <h4>Telefon: <a href="tel:509457568">+48 509 457 568</a></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h1>Piotr Hruszowiec</h1>
+                            <p>Mitutoyo, Zeiss, szkolenia teoretyczne</p>
+                            <h4>Telefon: <a href="tel:535366035">+48 535 366 035</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 localization">
+                            <h4>Wrocław, PL</h4>
+                            <p>W razie potrzeby dojeżdżamy. :-)</p>
+                        </div>
+                    </div>
+                        
+                    </div>
+                    <!--<form>
                         <div class="row">
                         <div class="col col-sm-6 col-xs-12">
                             <div class="form-group"> 
@@ -290,31 +309,20 @@
                                 <button type="submit" class="theme-button">Wyślij!</button>
                             </div>
                         </div>
-                        
-                    </form>
+                    </form> -->
                 </div>
         </section>
 
     </main>
 <!-- FOOTER -->
 		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="copyright col-4 col-sm-4 col-xs-12">
-					 	<p>Copyright 2018</p>
-					</div>
-					<div class="social col-4 col-sm-4 col-xs-12">
-                        ...
-					</div>
-					<div class="empty col-4 col-sm-4 col-xs-12">
-					</div>
-				</div>
-			</div>
+			<p>Copyright 2019 <a href="http://github.com/galdranorn">galdranorn</a></p>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src="js/numscroller-1.0.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 
 </html>

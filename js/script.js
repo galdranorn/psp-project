@@ -1,0 +1,1 @@
+$('#years').animateNumber({ number: 20 });

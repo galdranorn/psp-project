@@ -104,28 +104,25 @@ header {
                 height: 50px;
                 width: auto;
             }
-            li {
-                display: flex;
-                align-items: stretch;
-                height: 70px;
-                display: inline-block;
-                transition: .2s ease-out;
-                a {
-                    padding: 0 5px;
-                    line-height: 65px;
-                    text-decoration: none;
-                    color: white;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    transition: .2s ease-out;        
-                }
+            a {
+                padding: 0 5px;
+                line-height: 65px;
+                text-decoration: none;
+                color: white;
+                font-weight: 700;
+                text-transform: uppercase;
                 &:hover {
                     border-bottom: 4px solid $themeColour;
-                    a {
-                        color: $themeColour;
-                        text-decoration: none;
-                    }
+                    color: $themeColour;
+                }        
+                li {
+                    display: flex;
+                    align-items: stretch;
+                    height: 70px;
+                    display: inline-block;
+                    transition: .2s ease-out;
                 }
+            
             }
         }
     }  
@@ -174,34 +171,81 @@ header {
 // about us
 
 .about-us {
-    text-align: center;
-    .content {
-        padding: 20px 0;
-        text-align: left;
-        h3 {
-            font-size: 1em;
-            font-weight: bold;
-            text-align: center;
-        }
-        h4 {
-            font-size: 0.9em;
-            font-weight: bold;
-        }
-        .button {
-            text-align: center;
-        }
+    p {
+        text-align: justify;
+        margin: 20px 0;
+    }
+    .picture {
+        text-align: center;
     }
     img {
-        width: 80%;
-        box-shadow: 3px 3px 20px grey;
+        width: auto;
+        max-height: 500px;
+    }
+}
+
+// offer 
+
+.offer {
+    background: black;
+    color: white;
+    h1 {
+        color: white;
+    }
+    h4 {
+        text-align: center;
+        font-weight: bold;
+        height: 40px;
+        margin-top: 30px;
+    }
+    p {
+        text-align: center;
+    }
+    ul {
+        font-size: 0.85em;
+        color: #aaaaaa;
+    }
+    .icon {
+        font-size: 4em;
+        color: $themeColour;
+    }
+    .button {
+        text-align: center;
+        margin: 30px 0 0;
     }
 }
 
 // services
 
-
-
 .services {
+    .section-name {
+        padding-bottom: 30px;
+    }
+    .section-description {
+        padding-top: 20px;
+    }
+    .service {
+        padding: 5px;
+        text-align: center;
+        height: 100%;
+        text-decoration: none;
+        span {
+            font-size: 55px;
+        }
+        h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: .2s ease-out;
+        }
+        p {
+            color: #aaaaaa;
+            font-size: 12px;
+        }
+    }
+}
+
+.sectors {
     background: black;
     .section-name {
         color: white;
@@ -231,33 +275,6 @@ header {
         p {
             color: #aaaaaa;
             font-size: 12px;
-        }
-    }
-}
-
-// software
-
-.software {
-    text-align: center;
-    background-size: cover;
-    .card {
-        padding: 10px;
-        div {
-            background: white;
-            padding: 30px 10px 20px 10px;
-            border-radius: 3px;
-            img {
-                height: 50px;
-                margin-bottom: 20px;
-            }
-            button {
-                font-size: 10px;
-                padding: 5px 10px;
-            } 
-            .subsection-description {
-                font-size: 12px;
-                font-style: italic;
-            }
         }
     }
 }
@@ -306,21 +323,19 @@ header {
 .some-facts {
     background: black;
     text-align: center;
-    .section-name {color: white;}
+    .section-name {
+        color: white;
+    }
+    .section-description {
+        margin-bottom: 30px;
+    }
     h3 {
+        margin-top: 0;
         color: $themeColour;
         padding: 5px 5px 8px 5px;
         font-size: 35px;
         font-weight: 700;
         position: relative;
-        &::after {
-            content: 'x';
-            color: transparent;
-            border-bottom: 3px solid #aaaaaa;
-            position: absolute;
-            bottom: 0;
-            right: calc(50% - 13px);
-        }
     }
     h4 {
         color: white;
@@ -331,6 +346,7 @@ header {
     p {
         color: #aaaaaa;
         font-size: 12px;
+        margin-bottom: 5px;
     }
 }
 
@@ -338,6 +354,7 @@ header {
 // contact us
 
 .contact-us {
+    text-align: center;
     z-index: 1;
     background: url('../images/software.png');
     background-size: cover;
@@ -355,7 +372,21 @@ header {
     .col {
         padding-top: 20px;
     }
-
+    .write {
+        padding-bottom: 20px;
+        h2, h4 {
+            font-weight: bold;
+        }
+    }
+    .localization {
+        padding-top: 30px;
+        p {
+            font-size: 0.8em;
+        }
+        h4 {
+            font-size: 1em;
+        }
+    }
 }
 
 
@@ -365,7 +396,15 @@ footer {
     position: relative;
     top: 0;
     background: black;
-    padding: 20px;
+    padding: 20px 0 15px;
     color: white;
     z-index: 3;
+    text-align: center;
+    a {
+        color: white;
+        &:hover {
+            color: $themeColour;
+            text-decoration: none;
+        }
+    }
 }
