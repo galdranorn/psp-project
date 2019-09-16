@@ -1,0 +1,39 @@
+// hero
+
+.hero {
+    background-image: url('../images/tlo1.JPG');
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .slogan {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        width: 100%;
+    }
+    .slogan1 {
+        color: black;
+        span {
+            color: $themeColour;
+            font-weight: 700;
+        }
+    }
+    .slogan2 {
+        color: $themeColour;
+        font-size: 30px;
+    }
+    h2 {
+        color: black;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}

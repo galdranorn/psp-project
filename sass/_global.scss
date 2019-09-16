@@ -1,0 +1,85 @@
+// colors
+$themeColour: #0089c4;
+$grayBackground: #f7f7f7;
+
+// keyframes for hover animation
+
+@keyframes swing
+{   15% {-webkit-transform: translateX(5px);
+    transform: translateX(5px);}
+    30% {-webkit-transform: translateX(-5px);
+    transform: translateX(-5px);}
+    50% {-webkit-transform: translateX(3px);
+    transform: translateX(3px);}
+    65% {-webkit-transform: translateX(-3px);
+    transform: translateX(-3px);}
+    80% {-webkit-transform: translateX(2px);
+    transform: translateX(2px);}
+    100% {-webkit-transform: translateX(0);
+    transform: translateX(0);}
+}
+
+// global styles 
+.container {
+    width: 80%;
+}
+
+main { 
+    position: relative;
+    top: 70px;
+}
+
+section {
+    padding: 70px 30px;
+}
+
+.theme-button {
+    background: $themeColour;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 0px;
+    color: white;
+    margin: 10px;
+    &:hover {
+        animation: swing 1s ease-out;
+    }
+}
+
+.section-name, .section-description {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-name {
+    color: black;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #aaaaaa;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    span {
+        width: 10px;
+        height: 10px;
+        border: 1px solid $themeColour;
+        border-radius: 50%;
+        margin: 2px;
+    }
+
+    .full {
+        background: $themeColour;
+    }
+}

@@ -1,0 +1,18 @@
+// footer
+
+footer {
+    position: relative;
+    top: 0;
+    background: black;
+    padding: 20px 0 15px;
+    color: white;
+    z-index: 3;
+    text-align: center;
+    a {
+        color: white;
+        &:hover {
+            color: $themeColour;
+            text-decoration: none;
+        }
+    }
+}
